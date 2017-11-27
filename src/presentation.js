@@ -140,14 +140,6 @@ export default class Presentation extends React.Component {
             With redux-axios-middleware library is useful, see below example.
           </div>
 
-          <br/>
-
-          <div style={{ color: 'yellow' }}>
-            If a library was not available, I would use the fetch API and dispatch
-            response results to the store for app wide consumption and updates, ie: any
-            loading/spinner components, disabled button states, etc..
-          </div>
-
           <pre style={{ textAlign: 'left', fontSize: '65%', marginLeft: '25%' }}>
             {`
 // actions/fetchUsers.js
@@ -161,6 +153,14 @@ export const fetchAllUsers = () => ({
 })
             `}
           </pre>
+
+          <br/>
+
+          <div style={{ color: 'yellow' }}>
+            If a library was not available, I would use the fetch API and dispatch
+            response results to the store for app wide consumption and updates, ie: any
+            loading/spinner components, disabled button states, etc..
+          </div>
         </Slide>
 
         {/* #4 */}
@@ -251,7 +251,7 @@ function userReducer(state, action) {
           <div>
             Depending on the development team structure, sometimes unit tests drive development (ie: TDD)
             or explain how the code works and can be used through logical test steps.
-            Uni tests also aid in letting a dev know they broke something during a code change.
+            Unit tests also aid in letting a dev know they broke something during a code change.
 
             <ol style={{ color: 'grey', textAlign: 'left' }}>
               <li>Write unit tests from the start!</li>
